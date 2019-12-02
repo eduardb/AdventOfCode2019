@@ -3,7 +3,7 @@ def fuel_for(mass)
 end
 
 def recursive_fuel_for(mass)
-  fuel = mass / 3 - 2
+  fuel = fuel_for(mass)
   return 0 if fuel <= 0
   fuel + recursive_fuel_for(fuel)
 end
